@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce la historia y equipo de MiSitio.">
+    <title>MiSitio | Nosotros</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts: Bebas Neue & Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-xl navbar-dark" id="mainNav" style="background-color: #EF7909; position: relative;">
+        <div class="container d-flex justify-content-between align-items-center">
+          <a class="navbar-brand m-0" href="index.html">
+            <img src="img/LOGO.png" alt="Logo POW! Magazine" height="45" id="navbarLogo">
+          </a>
+          <button class="navbar-toggler border-0 shadow-none" type="button" id="miBotonMenu" style="cursor: pointer; z-index: 1050;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="menuNavegacion" style="background-color: #EF7909;">
+            <ul class="navbar-nav gap-2 text-center text-xl-start pt-3 pt-xl-0 ms-auto">
+              <li class="nav-item"><a class="nav-link fw-bold px-3 menu-item-pow" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold px-3 menu-item-pow active" href="nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold px-3 menu-item-pow" href="Noticias.html">Noticias</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold px-3 menu-item-pow" href="Revista.html">Revista</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold px-3 menu-item-pow" href="Tienda.html">Tienda</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold px-3 menu-item-pow" href="contacto.html">Contacto</a></li>
+              <li class="nav-item ms-xl-2" id="contenedorUsuario">
+              <!-- Si no ha iniciado -->
+              <button class="btn btn-outline-light fw-bold px-3 py-1 rounded-pill small" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <i class="bi bi-person-circle me-1"></i> Iniciar Sesión</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+         <!-- HERO -->
+         <section class="hero-nosotros">
+            <div class="contenedor hero-contenido">
+                <div class="hero-texto">
+                    <span class="etiqueta">
+                        NOSOTROS
+                    </span>
+                    <h1 class="display-4 fw-bold">
+                     Nosotros somos <br>
+                     <span style="color: var(--amarillo) !important;">POW! MAGAZING</span>
+                    </h1>
+                    <p>
+                        Somos una revista especializada en comics, compartimos todas las noticias más relevantes del mundo geek.
+                        Pero nuestro objetivo principal es compartir los comics de artistas independientes, y junto a nuestro equipo de editores y artistas, buscamos llevar nuevas historias mundos de fantasía y grandes personajes al público en general.   
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-equipo">
+            <div class="contenedor">
+                <h2>
+                    NUESTRO EQUIPO
+                </h2>
+            </div>
+        </section>
+
+        <section class="hero-nosotros2">
+            <div class="contenedor hero-contenido">
+                <div class="hero-texto">
+                    <span class="etiqueta">
+                        EDITORES
+                    </span>
+                    <span class="etiqueta">
+                        ARTISTAS
+                    </span>
+                    <h1 class="display-4 fw-bold">
+                     Artista y Editor en jefe de POW! <br>
+                     <span style="color: var(--amarillo) !important;">Crazy Hax</span>
+                    </h1>
+                    <p>
+                        Diseñador gráfico e ilustrador Oaxaqueño, principal editor y artista de la revista, especializado en identidad visual, proyectos de cultura geek. Su trabajo está fuertemente influenciado por el comic y la ilustración tradicional. Creador de historias como No More Heroes y The Dead Constellar.
+                    </p>
+                    <div class="botones">
+                        <a href="https://www.instagram.com/crasy_hax/" class="boton boton-principal">
+                            Instagram
+                        </a>
+                        <a href="https://x.com/CRASYHAX" class="boton boton-secundario">
+                            X
+                        </a>
+                        <a href="https://www.tiktok.com/@crazyhax" class="boton boton-secundario">
+                            Tiktok
+                        </a>
+                    </div>
+                </div>
+                <div class="imagen-marco-nosotros">
+                  <img src="img/hax logo.png" alt="Imagen Nosotros">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========================================================
+             CARRUSEL DE ARTISTAS (Automático y Manual)
+        ======================================================== -->
+        <section class="py-5" style="background-color: white;">
+          <div class="container">
+            
+            <!-- data-bs-ride="carousel" activa el automático y data-bs-interval define el tiempo en milisegundos -->
+            <div id="carruselArtistas" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+              
+              <!-- Indicadores (puntos de abajo) -->
+              <div class="carousel-indicators mb-0" style="bottom: -30px;">
+                <button type="button" data-bs-target="#carruselArtistas" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Artista 1"></button>
+                <button type="button" data-bs-target="#carruselArtistas" data-bs-slide-to="1" class="bg-dark" aria-label="Artista 2"></button>
+                <button type="button" data-bs-target="#carruselArtistas" data-bs-slide-to="2" class="bg-dark" aria-label="Artista 3"></button>
+              </div>
+
+              <!-- Diapositivas -->
+              <div class="carousel-inner">
+
+                <!-- ARTISTA 1: Onayutsuki -->
+                <div class="carousel-item active">
+                  <div class="hero-nosotros3 my-0 py-4" style="background-color: white;">
+                    <div class="hero-contenido">
+                      <div class="hero-texto">
+                        <span class="etiqueta">
+                            ARTISTAS
+                        </span>
+                        <h1 class="display-4 fw-bold" style="color: #EF7909 ;">
+                            Artista principal <br>
+                            <span style="color: var(--negro) !important;">Onayutsuki</span>
+                        </h1>
+                        <p style="color: black;">
+                            Onayu es un artista digital y diseñador de personajes independiente de Baja California. Su especialidad es la ilustración y diseño de personajes originales, con un estilo inspirado en el gijinkas y monster girls.
+                        </p>
+                        <div class="botones">
+                            <a href="https://www.tiktok.com/@onayutsuki.exe" class="boton boton-principal" target="_blank">
+                                Tiktok
+                            </a>
+                            <a href="https://x.com/Onayutsuki_exe" class="boton boton-secundario" style="border-color: var(--azul-oscuro); color: var(--azul-oscuro);" target="_blank">
+                                X
+                            </a>
+                        </div>
+                      </div>
+                      <div class="imagen-marco-nosotros">
+                        <img src="img/3.png" alt="Onayutsuki">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ARTISTA 2 -->
+                <div class="carousel-item">
+                  <div class="hero-nosotros3 my-0 py-4" style="background-color: white;">
+                    <div class="hero-contenido">
+                      <div class="hero-texto">
+                        <span class="etiqueta">
+                        EDITORES
+                        </span>
+                        <span class="etiqueta">
+                        ARTISTAS
+                        </span>
+                        <h1 class="display-4 fw-bold" style="color:#EF7909 ;">
+                            Artista y Editora <br>
+                            <span style="color: var(--negro) !important;">Kokone</span>
+                        </h1>
+                        <p style="color: black;">
+                            Originaria de Querétaro, es una artista enfocada en el diseño de personajes y la ilustración narrativa. 
+                            Lidera el área editorial como Editora Principal de POW! Magazine.
+                        </p>
+                        <div class="botones">
+                            <a href="https://www.tiktok.com/@kokone_183" class="boton boton-principal" target="_blank">
+                                Tiktok
+                            </a>
+                            <a href="https://x.com/Kokone_183" class="boton boton-secundario" style="border-color: var(--azul-oscuro); color: var(--azul-oscuro);" target="_blank">
+                                X
+                            </a>
+                        </div>
+                      </div>
+                      <div class="imagen-marco-nosotros">
+                        <img src="img/4.png" alt="Nueva Artista">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ARTISTA 3 -->
+                <div class="carousel-item">
+                  <div class="hero-nosotros3 my-0 py-4" style="background-color: white;">
+                    <div class="hero-contenido">
+                      <div class="hero-texto">
+                        <span class="etiqueta">
+                        ARTISTAS
+                        </span>
+                        <h1 class="display-4 fw-bold" style="color:#EF7909 ;">
+                            Artista Destacado <br>
+                            <span style="color: var(--negro) !important;">Amauri Morales</span>
+                        </h1>
+                        <p style="color: black;">
+                            Artista Oaxaqueño especializado en la ilustración de la narrativa gráfica de cómics y novelas
+                            gráficas, su estilo se inspira de refentes como Marte Gracia y Edgar Delgado.
+                        </p>
+                        <div class="botones">
+                            <a href="https://www.instagram.com/amauri_art/" class="boton boton-principal" target="_blank">
+                                Instagram
+                            </a>
+                            <a href="https://www.tiktok.com/@amauri.morales" class="boton boton-secundario" style="border-color: var(--azul-oscuro); color: var(--azul-oscuro);" target="_blank">
+                                Tiktok
+                            </a>
+                        </div>
+                      </div>
+                      <div class="imagen-marco-nosotros">
+                        <img src="img/5.jpeg" alt="Nueva Artista">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <!-- Flechas de navegación movidas hacia afuera para que no estorben -->
+              <button class="carousel-control-prev flecha-fuera-izq" type="button" data-bs-target="#carruselArtistas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%); width: 3rem; height: 3rem;"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next flecha-fuera-der" type="button" data-bs-target="#carruselArtistas" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%); width: 3rem; height: 3rem;"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+
+            </div>
+
+          </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-3">
+        <div>
+            <strong>POW! Revista WEB</strong>
+            <p class="mb-0 text-secondary small">La mejor revista de cómics, cultura pop y noticias geeks.</p>
+        </div>
+        <div class="text-center text-md-end">
+            <!-- Términos y Condiciones -->
+            <button class="btn btn-link text-white-50 p-0 text-decoration-none small"
+             type="button" data-bs-toggle="modal" data-bs-target="#terminosModal">
+                <i class="bi bi-shield-check me-1"></i> Términos y Condiciones
+            </button>
+            <p class="mb-0 text-secondary small mt-1">© 2026 POW! Magazine</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (Necesario para que el carrusel rote automáticamente y responda a los clics) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para el menú desplegable -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const boton = document.getElementById("miBotonMenu");
+        const menu = document.getElementById("menuNavegacion");
+
+        if (boton && menu) {
+          boton.addEventListener("click", function(e) {
+            e.preventDefault();
+            if (menu.classList.contains("show")) {
+              menu.classList.remove("show");
+            } else {
+              menu.classList.add("show");
+            }
+          });
+        }
+      });
+    </script>
+
+<!-- MODAL DE TÉRMINOS Y CONDICIONES -->
+<div class="modal fade" id="terminosModal" tabindex="-1" aria-labelledby="terminosTitulo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title fw-bold" id="terminosTitulo" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 1px;">
+                    <i class="bi bi-shield-lock text-warning me-2"></i> Términos y Condiciones de Uso
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body text-dark px-4 py-3" style="font-family: 'Lexend', sans-serif; font-size: 0.95rem; line-height: 1.6;">
+                
+                <p class="text-muted small">Última actualización: 2026. Al navegar y realizar transacciones en POW! Magazine, aceptas los siguientes términos:</p>
+
+                <hr>
+
+                <!-- SECCIÓN 1: TIENDA -->
+                <div class="mb-4">
+                    <h6 class="fw-bold text-uppercase mb-2" style="color: #EF7909;">
+                        <i class="bi bi-bag-check me-1"></i> 1. Tienda en Línea y Envíos
+                    </h6>
+                    <ul class="text-secondary ps-3 mb-0">
+                        <li class="mb-1"><strong>Envíos y Entregas:</strong> POW! Magazine coordina envíos con paqueterías externas. No nos hacemos responsables por retrasos, entregas a destiempo, paquetes no etiquetados o inconvenientes causados por direcciones incorrectas o incompletas proporcionadas por el usuario.</li>
+                        <li class="mb-1"><strong>Disponibilidad:</strong> Los productos y coleccionables están sujetos a disponibilidad de inventario.</li>
+                        <li><strong>Simulación de Pagos:</strong> Las compras realizadas en este portal forman parte de un entorno de demostración web.</li>
+                    </ul>
+                </div>
+
+                <!-- SECCIÓN 2: CÓMICS -->
+                <div class="mb-4">
+                    <h6 class="fw-bold text-uppercase mb-2" style="color: #EF7909;">
+                        <i class="bi bi-book me-1"></i> 2. Cómics y Propiedad Intelectual
+                    </h6>
+                    <ul class="text-secondary ps-3 mb-0">
+                        <li class="mb-1"><strong>Derechos de Autor:</strong> Los cómics, ilustraciones y personajes exhibidos son propiedad intelectual exclusiva de sus respectivos autores, creadores e ilustradores.</li>
+                        <li class="mb-1"><strong>Derechos de Distribución:</strong> POW! Magazine cuenta únicamente con licencias y derechos de distribución comercial o difusión autorizada.</li>
+                        <li><strong>Uso Indebido:</strong> Queda estrictamente prohibida la reproducción parcial o total, copia, distribución no autorizada o explotación comercial de las obras sin el consentimiento previo por escrito de los titulares de los derechos. El uso indebido será sancionado conforme a la ley.</li>
+                    </ul>
+                </div>
+
+                <!-- SECCIÓN 3: NOTICIAS Y ARTÍCULOS -->
+                <div>
+                    <h6 class="fw-bold text-uppercase mb-2" style="color: #EF7909;">
+                        <i class="bi bi-newspaper me-1"></i> 3. Noticias, Editorial y Contenidos
+                    </h6>
+                    <ul class="text-secondary ps-3 mb-0">
+                        <li class="mb-1"><strong>Derechos sobre Contenido:</strong> POW! Magazine no es propietaria de las noticias, marcas o eventos externos citados en la sección informativa.</li>
+                        <li class="mb-1"><strong>Artículos de Editores:</strong> Todos los artículos de opinión, reseñas, entrevistas y textos redactados por nuestros colaboradores y editores son propiedad intelectual exclusiva de POW! Magazine.</li>
+                        <li><strong>Información de Terceros:</strong> El contenido informativo externo se utiliza bajo fines puramente informativos y de difusión cultural.</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="modal-footer bg-light">
+                <button type="button" class="btn btn-dark fw-bold px-4" data-bs-dismiss="modal">Entendido y Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL INICIO / REGISTRO -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginTitulo" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      
+      <!-- Encabezado -->
+      <div class="modal-header bg-dark text-white border-0 pb-0">
+        <ul class="nav nav-tabs border-0" id="loginTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active text-white fw-bold border-0 bg-transparent" id="tab-login" data-bs-toggle="tab" data-bs-target="#panel-login" type="button" role="tab">Iniciar Sesión</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-white-50 fw-bold border-0 bg-transparent" id="tab-registro" data-bs-toggle="tab" data-bs-target="#panel-registro" type="button" role="tab">Crear Cuenta</button>
+          </li>
+        </ul>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body p-4">
+        <div class="tab-content" id="loginTabsContent">
+          
+          <!-- INICIAR SESIÓN -->
+          <div class="tab-pane fade show active" id="panel-login" role="tabpanel">
+            <div class="text-center mb-4">
+              <img src="img/LOGO.png" alt="POW! Logo" style="height: 40px;">
+              <p class="text-muted small mt-2">¡Bienvenido de vuelta a POW! Magazine!</p>
+            </div>
+            <form id="formLogin" onsubmit="procesarLogin(event)">
+              <div class="mb-3">
+                <label for="loginCorreo" class="form-label small fw-bold">Correo Electrónico</label>
+                <input type="email" class="form-control" id="loginCorreo" placeholder="tu@correo.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="loginPass" class="form-label small fw-bold">Contraseña</label>
+                <input type="password" class="form-control" id="loginPass" placeholder="••••••••" required>
+              </div>
+              <button type="submit" class="btn text-white w-100 fw-bold py-2" style="background-color: #EF7909;">
+                Entrar
+              </button>
+            </form>
+          </div>
+
+          <!-- REGISTRO DE CUENTA -->
+          <div class="tab-pane fade" id="panel-registro" role="tabpanel">
+            <div class="text-center mb-3">
+              <h5 class="fw-bold" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem;">Únete a la comunidad POW!</h5>
+            </div>
+            <form id="formRegistro" onsubmit="procesarRegistro(event)">
+              <div class="mb-2">
+                <label for="regNombre" class="form-label small fw-bold">Nombre Completo</label>
+                <input type="text" class="form-control" id="regNombre" placeholder="Tu Nombre" required>
+              </div>
+              <div class="mb-2">
+                <label for="regCorreo" class="form-label small fw-bold">Correo Electrónico</label>
+                <input type="email" class="form-control" id="regCorreo" placeholder="tu@correo.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="regPass" class="form-label small fw-bold">Contraseña</label>
+                <input type="password" class="form-control" id="regPass" placeholder="Crea una contraseña" required>
+              </div>
+              <button type="submit" class="btn btn-dark w-100 fw-bold py-2">
+                Crear Mi Cuenta
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

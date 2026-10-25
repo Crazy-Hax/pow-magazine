@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Sitio web de ejemplo para demostrar arquitectura de información y HTML semántico.">
+
+    <title>POW! Magazine | Inicio</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts: Bebas Neue & Lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+
+   <!-- ENCABEZADO -->
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-xl navbar-dark" id="mainNav" style="background-color: #EF7909; position: relative;">
+    <div class="container d-flex justify-content-between align-items-center">
+      
+      <!-- LOGO -->
+      <a class="navbar-brand m-0" href="index.html">
+        <img src="img/LOGO.png" alt="Logo POW! Magazine" height="45" id="navbarLogo">
+      </a>
+
+
+      <!-- BOTÓN 3 BARRITAS CON CHECKBOX INVISIBLE O EVENTO DIRECTO -->
+      <button class="navbar-toggler border-0 shadow-none" type="button" id="miBotonMenu" style="cursor: pointer; z-index: 1050;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- MENÚ DE OPCIONES -->
+      <div class="collapse navbar-collapse justify-content-end" id="menuNavegacion" style="background-color: #EF7909;">
+        <ul class="navbar-nav gap-2 text-center text-xl-start pt-3 pt-xl-0 ms-auto">
+         <li class="nav-item">
+            <a class="nav-link fw-bold px-3 menu-item-pow active" href="index.html">Inicio</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link fw-bold px-3 menu-item-pow " href="nosotros.html">Nosotros</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link fw-bold px-3 menu-item-pow" href="Noticias.html">Noticias</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link fw-bold px-3 menu-item-pow" href="Revista.html">Revista</a>
+         </li>
+         <li class="nav-item"><a class="nav-link fw-bold px-3 menu-item-pow" href="Tienda.html">Tienda</a></li>
+         <li class="nav-item">
+            <a class="nav-link fw-bold px-3 menu-item-pow" href="contacto.html">Contacto</a>
+         </li>
+         <li class="nav-item ms-xl-2" id="contenedorUsuario">
+         <!-- Si no ha iniciado -->
+         <button class="btn btn-outline-light fw-bold px-3 py-1 rounded-pill small" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+         Iniciar Sesión
+         </button>
+         </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="contenedor hero-contenido">
+
+                <div class="hero-texto">
+
+                    <span class="etiqueta">
+                        EDITORIAL
+                    </span>
+
+                    <h1>
+                        La revista para saber sobre el mundo de los 
+                        <span>Comics y Más.</span>
+                    </h1>
+
+                    <p>
+                        Nos dedicamos a compartir las historias y comics de artistas independientes e informan las noticias
+                         más relevantes relacionadas con la cultura geek. 
+                    </p>
+
+                    <div class="botones">
+
+                        <a href="Revista.html" class="boton boton-principal">
+                            Revista
+                        </a>
+
+                        <a href="nosotros.html" class="boton boton-secundario">
+                            Conócenos
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-imagen">
+
+                    <div class="imagen-marco">
+
+                        <img src="img/LOGO blanco_Mesa de trabajo 1.png"
+                            alt="Edificio principal de la institución">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+     <!-- PRESENTACIÓN -->
+        <section class="seccion-raygunn-estructura">
+        <div class="contenedor">
+        
+       
+        <div class="encabezado-seccion">
+    
+            <div class="texto-encabezado">
+                <span class="subtitulo">ULTIMAS NOTICIAS</span>
+                <h2>Primeras Imagenes y Trailer de Ray Gunn</h2>
+            </div>
+        </div>
+
+        
+        <div class="texto-sobre-fondo">
+            <p>En la Noche del 23 de septiembre. Netflix presenta 
+             las primeras imagenes de ‘Ray Gunn’, el nuevo proyecto del director de Los increíbles, El gigante de Hierro 
+             y Ratatuille. Una historia de detectives Noir en un futuro Retro-Futurista.</p>
+        </div>
+
+        <a href="Noticias.html" class="boton boton-principal">
+             Leer más
+        </a>
+
+         </div>
+        </section>
+
+        <!-- ========================================================
+     CARRUSEL DE CÓMICS Y PRÓXIMAMENTE
+======================================================== -->
+<div id="carruselComics" class="carousel slide position-relative" data-bs-ride="carousel" data-bs-interval="5000">
+  
+  <!-- Diapositivas -->
+  <div class="carousel-inner">
+
+    <!-- DIAPOSITIVA 1: The Dead Constellar #0 (Tu sección original completa) -->
+    <div class="carousel-item active">
+      <section class="seccion-constelar-blanco m-0" style="background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.95) 40%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0) 100%), url('img/2.png'); background-size: cover; background-position: center right;">
+        <div class="contenedor contenido-constelar-blanco">
+          <div class="bloque-texto-izquierda">
+            <div class="encabezado-seccion">
+              <div class="texto-encabezado">
+                <span class="subtitulo" style="color: black;">COMICS</span>
+                <h2 style="color: var(--negro);">The Dead Constellar #0</h2>
+              </div>
+            </div>
+
+            <div class="texto-sobre-blanco">
+              <p>Los poderosos Zodiac Guardians se enfrentan a lo último que queda del ejercito de Lord Drakkou, pero en el enfrentamiento final uno de los generales desata un mal mayor al que los Zodiacs deberán enfrentarse si quieren salvar al mundo.</p>
+            </div>
+
+            <div class="botones">
+              <a href="TDC.html" class="boton boton-principal">Leer más</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- DIAPOSITIVA 2: Imagen de "Próximamente" -->
+    <div class="carousel-item">
+      <div class="seccion-proximamente-banner text-center d-flex align-items-center justify-content-center" style="min-height: 500px; background-size: cover; background-position: center; background-repeat: no-repeat; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/proximamente.jpg');">
+        <div class="contenedor py-5 text-white">
+          <h2 class="display-3 fw-bold" style="font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; color: var(--amarillo) !important;">MÁS CÓMICS PRÓXIMAMENTE</h2>
+          <p class="lead" style="font-family: 'Lexend', sans-serif;">Nuevas historias y universos están en camino. ¡Espéralos pronto en POW! Magazine.</p>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- Fin carousel-inner -->
+
+  <!-- Flechas de navegación visibles a los costados -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carruselComics" data-bs-slide="prev" style="width: 8%;">
+    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carruselComics" data-bs-slide="next" style="width: 8%;">
+    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+
+</div>
+        
+
+
+
+       <!-- ¿QUÉ ENCONTRARÁS AQUÍ? -->
+<section class="seccion seccion-gris py-5">
+    <div class="container">
+        
+        <div class="text-center mb-5">
+            <h2 class="display-5" style="color: #EF7909; font-family: 'Bebas Neue', sans-serif; letter-spacing: 1px;">
+                ¿QUÉ ENCONTRARÁS AQUÍ?
+            </h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- TARJETA 1 -->
+             <div class="col-sm-6 col-md-4 col-lg-2-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-3 text-white transition-card" style="background-color: #EF7909;">
+                   <div class="card-body d-flex flex-column align-items-center">
+                        <div class="mb-3 d-flex align-items-center justify-content-center bg-white rounded-3 shadow-sm p-2" style="width: 55px; height: 55px;">
+                            <img src="img/icono-02.png" alt="Icono Cómics" style="max-height: 40px; width: auto;">
+                        </div>
+                        <h3 class="card-title h5 fw-bold mb-2" style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 2px;">CÓMICS</h3>
+                        <p class="card-text small text-white mb-3">Lee los cómics de autor de nuestros artistas.</p>
+                        <div class="botones">
+                             <a href="Revista.html" class="boton boton-principal">Leer Más</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-2-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-3 text-white transition-card" style="background-color: #EF7909;">
+                   <div class="card-body d-flex flex-column align-items-center">
+                        <div class="mb-3 d-flex align-items-center justify-content-center bg-white rounded-3 shadow-sm p-2" style="width: 55px; height: 55px;">
+                        <img src="img/icono-05.png" alt="Icono Artistas" style="max-height: 35px; width: auto;">
+                        </div>
+                        <h3 class="card-title h5 fw-bold mb-2" style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 2px;">ARTISTAS</h3>
+                        <p class="card-text small text-white mb-3">Los creadores de tus historias favoritas.</p>
+                        <div class="botones">
+                             <a href="Nosotros.html" class="boton boton-principal">Conócelos</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+ <!-- TARJETA 3 -->
+           <div class="col-sm-6 col-md-4 col-lg-2-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-3 text-white transition-card" style="background-color: #EF7909;">
+                   <div class="card-body d-flex flex-column align-items-center">
+                   <div class="mb-3 d-flex align-items-center justify-content-center bg-white rounded-3 shadow-sm p-2" style="width: 55px; height: 55px;">
+                       <i class="bi bi-cart3 fs-3" style="color: #EF7909;"></i>
+                   </div>
+                   <h3 class="card-title h5 fw-bold mb-1 text-white" style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 2px;">PRODUCTOS</h3>
+                   <p class="card-text small text-white opacity-90 mb-4">Consigue productos oficiales de POW!.</p>
+                         <div class="botones">
+                             <a href="Tienda.html" class="boton boton-principal">Ver Más</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 4 -->
+             <div class="col-sm-6 col-md-4 col-lg-2-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-3 text-white transition-card" style="background-color: #EF7909;">
+                   <div class="card-body d-flex flex-column align-items-center">
+                        <div class="mb-3 d-flex align-items-center justify-content-center bg-white rounded-3 shadow-sm p-2" style="width: 55px; height: 55px;">
+                            <img src="img/icono_Mesa de trabajo 1.png" alt="Icono Revista" style="max-height: 40px; width: auto;">
+                        </div>
+                        <h3 class="card-title h5 fw-bold mb-2" style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 2px;">REVISTA</h3>
+                        <p class="card-text small text-white mb-3">Lee la edición digital de nuestra revista.</p>
+                         <div class="botones">
+                             <a href="Revista.html" class="boton boton-principal">Leer Ahora</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 5 -->
+             <div class="col-sm-6 col-md-4 col-lg-2-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-3 text-white transition-card" style="background-color: #EF7909;">
+                   <div class="card-body d-flex flex-column align-items-center">
+                        <div class="mb-3 d-flex align-items-center justify-content-center bg-white rounded-3 shadow-sm p-2" style="width: 55px; height: 55px;">
+                            <img src="img/icono-03.png" alt="Icono Noticias" style="max-height: 40px; width: auto;">
+                        </div>
+                        <h3 class="card-title h5 fw-bold mb-1" style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 2px;">NOTICIAS</h3>
+                        <p class="card-text small text-white mb-3">Ponte al día con las noticias de la cultura Geek.</p>
+                        <div class="botones">
+                             <a href="Noticias.html" class="boton boton-principal">Ver Más</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 6 -->
+            <div class="col-sm-6 col-md-4 col-lg-2-4">
+                <div class="card h-100 border-0 shadow-sm text-center p-3 text-white transition-card" style="background-color: #EF7909;">
+                   <div class="card-body d-flex flex-column align-items-center">
+                        <div class="mb-3 d-flex align-items-center justify-content-center bg-white rounded-3 shadow-sm p-2" style="width: 55px; height: 55px;">
+                            <img src="img/icono-04.png" alt="Icono Participa" style="max-height: 40px; width: auto;">
+                        </div>
+                        <h3 class="card-title h5 fw-bold mb-2" style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 2px;">PARTICIPA</h3>
+                        <p class="card-text small text-white mb-3">Contáctanos y publica tu trabajo con nosotros.</p>
+                        <div class="botones">
+                             <a href="Contacto.html" class="boton boton-principal">Contactarnos</a>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start gap-3">
+        <div>
+            <strong>POW! Revista WEB</strong>
+            <p class="mb-0 text-secondary small">La mejor revista de cómics, cultura pop y noticias geeks.</p>
+        </div>
+        <div class="text-center text-md-end">
+            <!-- Términos y Condiciones -->
+            <button class="btn btn-link text-white-50 p-0 text-decoration-none small"
+             type="button" data-bs-toggle="modal" data-bs-target="#terminosModal">
+                <i class="bi bi-shield-check me-1"></i> Términos y Condiciones
+            </button>
+            <p class="mb-0 text-secondary small mt-1">© 2026 POW! Magazine</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap 5 JavaScript (Imprescindible para que el carrusel funcione) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const boton = document.getElementById("miBotonMenu");
+    const menu = document.getElementById("menuNavegacion");
+
+    boton.addEventListener("click", function(e) {
+      e.preventDefault();
+      // Alterna la clase 'show' de Bootstrap de forma manual y segura
+      if (menu.classList.contains("show")) {
+        menu.classList.remove("show");
+      } else {
+        menu.classList.add("show");
+      }
+    });
+  });
+</script>
+<!-- MODAL DE TÉRMINOS Y CONDICIONES -->
+<div class="modal fade" id="terminosModal" tabindex="-1" aria-labelledby="terminosTitulo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title fw-bold" id="terminosTitulo" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 1px;">
+                    <i class="bi bi-shield-lock text-warning me-2"></i> Términos y Condiciones de Uso
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body text-dark px-4 py-3" style="font-family: 'Lexend', sans-serif; font-size: 0.95rem; line-height: 1.6;">
+                
+                <p class="text-muted small">Última actualización: 2026. Al navegar y realizar transacciones en POW! Magazine, aceptas los siguientes términos:</p>
+
+                <hr>
+
+                <!-- SECCIÓN 1: TIENDA -->
+                <div class="mb-4">
+                    <h6 class="fw-bold text-uppercase mb-2" style="color: #EF7909;">
+                        <i class="bi bi-bag-check me-1"></i> 1. Tienda en Línea y Envíos
+                    </h6>
+                    <ul class="text-secondary ps-3 mb-0">
+                        <li class="mb-1"><strong>Envíos y Entregas:</strong> POW! Magazine coordina envíos con paqueterías externas. No nos hacemos responsables por retrasos, entregas a destiempo, paquetes no etiquetados o inconvenientes causados por direcciones incorrectas o incompletas proporcionadas por el usuario.</li>
+                        <li class="mb-1"><strong>Disponibilidad:</strong> Los productos y coleccionables están sujetos a disponibilidad de inventario.</li>
+                        <li><strong>Simulación de Pagos:</strong> Las compras realizadas en este portal forman parte de un entorno de demostración web.</li>
+                    </ul>
+                </div>
+
+                <!-- SECCIÓN 2: CÓMICS -->
+                <div class="mb-4">
+                    <h6 class="fw-bold text-uppercase mb-2" style="color: #EF7909;">
+                        <i class="bi bi-book me-1"></i> 2. Cómics y Propiedad Intelectual
+                    </h6>
+                    <ul class="text-secondary ps-3 mb-0">
+                        <li class="mb-1"><strong>Derechos de Autor:</strong> Los cómics, ilustraciones y personajes exhibidos son propiedad intelectual exclusiva de sus respectivos autores, creadores e ilustradores.</li>
+                        <li class="mb-1"><strong>Derechos de Distribución:</strong> POW! Magazine cuenta únicamente con licencias y derechos de distribución comercial o difusión autorizada.</li>
+                        <li><strong>Uso Indebido:</strong> Queda estrictamente prohibida la reproducción parcial o total, copia, distribución no autorizada o explotación comercial de las obras sin el consentimiento previo por escrito de los titulares de los derechos. El uso indebido será sancionado conforme a la ley.</li>
+                    </ul>
+                </div>
+
+                <!-- SECCIÓN 3: NOTICIAS Y ARTÍCULOS -->
+                <div>
+                    <h6 class="fw-bold text-uppercase mb-2" style="color: #EF7909;">
+                        <i class="bi bi-newspaper me-1"></i> 3. Noticias, Editorial y Contenidos
+                    </h6>
+                    <ul class="text-secondary ps-3 mb-0">
+                        <li class="mb-1"><strong>Derechos sobre Contenido:</strong> POW! Magazine no es propietaria de las noticias, marcas o eventos externos citados en la sección informativa.</li>
+                        <li class="mb-1"><strong>Artículos de Editores:</strong> Todos los artículos de opinión, reseñas, entrevistas y textos redactados por nuestros colaboradores y editores son propiedad intelectual exclusiva de POW! Magazine.</li>
+                        <li><strong>Información de Terceros:</strong> El contenido informativo externo se utiliza bajo fines puramente informativos y de difusión cultural.</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="modal-footer bg-light">
+                <button type="button" class="btn btn-dark fw-bold px-4" data-bs-dismiss="modal">Entendido y Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MODAL INICIO / REGISTRO -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginTitulo" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      
+      <!-- Encabezado -->
+      <div class="modal-header bg-dark text-white border-0 pb-0">
+        <ul class="nav nav-tabs border-0" id="loginTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active text-white fw-bold border-0 bg-transparent" id="tab-login" data-bs-toggle="tab" data-bs-target="#panel-login" type="button" role="tab">Iniciar Sesión</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-white-50 fw-bold border-0 bg-transparent" id="tab-registro" data-bs-toggle="tab" data-bs-target="#panel-registro" type="button" role="tab">Crear Cuenta</button>
+          </li>
+        </ul>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body p-4">
+        <div class="tab-content" id="loginTabsContent">
+          
+          <!-- INICIAR SESIÓN -->
+          <div class="tab-pane fade show active" id="panel-login" role="tabpanel">
+            <div class="text-center mb-4">
+              <img src="img/LOGO.png" alt="POW! Logo" style="height: 40px;">
+              <p class="text-muted small mt-2">¡Bienvenido de vuelta a POW! Magazine!</p>
+            </div>
+            <form id="formLogin" onsubmit="procesarLogin(event)">
+              <div class="mb-3">
+                <label for="loginCorreo" class="form-label small fw-bold">Correo Electrónico</label>
+                <input type="email" class="form-control" id="loginCorreo" placeholder="tu@correo.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="loginPass" class="form-label small fw-bold">Contraseña</label>
+                <input type="password" class="form-control" id="loginPass" placeholder="••••••••" required>
+              </div>
+              <button type="submit" class="btn text-white w-100 fw-bold py-2" style="background-color: #EF7909;">
+                Entrar
+              </button>
+            </form>
+          </div>
+
+          <!-- REGISTRO DE CUENTA -->
+          <div class="tab-pane fade" id="panel-registro" role="tabpanel">
+            <div class="text-center mb-3">
+              <h5 class="fw-bold" style="font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem;">Únete a la comunidad POW!</h5>
+            </div>
+            <form id="formRegistro" onsubmit="procesarRegistro(event)">
+              <div class="mb-2">
+                <label for="regNombre" class="form-label small fw-bold">Nombre Completo</label>
+                <input type="text" class="form-control" id="regNombre" placeholder="Tu Nombre" required>
+              </div>
+              <div class="mb-2">
+                <label for="regCorreo" class="form-label small fw-bold">Correo Electrónico</label>
+                <input type="email" class="form-control" id="regCorreo" placeholder="tu@correo.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="regPass" class="form-label small fw-bold">Contraseña</label>
+                <input type="password" class="form-control" id="regPass" placeholder="Crea una contraseña" required>
+              </div>
+              <button type="submit" class="btn btn-dark w-100 fw-bold py-2">
+                Crear Mi Cuenta
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
